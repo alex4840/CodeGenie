@@ -1,14 +1,16 @@
 {
   "name": "gpt",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack application with Express and React",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "start": "node server.js",
     "client": "npm start --prefix ./client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "build": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "author": "alex",
   "license": "ISC",
