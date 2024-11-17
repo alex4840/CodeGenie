@@ -1,15 +1,15 @@
 import React from 'react';
-import { Box, Link, Typography, useTheme } from '@mui/material';
+import { Box, Link, Typography} from '@mui/material';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from './logo1.svg';  // Use SVG file
 
 const Navbar = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  const loggedIn = JSON.parse(localStorage.getItem('authToken'));
+  // const loggedIn = JSON.parse(localStorage.getItem('authToken'));
 
   // handle logout
   const handleLogout = async () => {

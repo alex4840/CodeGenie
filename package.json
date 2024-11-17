@@ -37,6 +37,7 @@
     "three": "^0.170.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0",
     "source-map-loader": "^5.0.0"
   }

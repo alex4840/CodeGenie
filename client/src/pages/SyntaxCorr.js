@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import {
   Box,
@@ -16,7 +16,7 @@ import {
 
 const SyntaxCorr = () => {
   const theme = useTheme();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const isNotMobile = useMediaQuery("(min-width: 1000px)");
 
   const [text, setText] = useState("");

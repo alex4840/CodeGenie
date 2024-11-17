@@ -14,7 +14,7 @@ import LanguageConvertor from './pages/LanguageConvertor';
 import SyntaxCorr from './pages/SyntaxCorr';
 function App() {
   const theme = useMemo(() => createTheme(themeSettings()), []);
-  const authToken = localStorage.getItem('authToken');
+  // const authToken = localStorage.getItem('authToken');
 
   return (
     <>
