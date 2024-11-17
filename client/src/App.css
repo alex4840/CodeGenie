@@ -1,0 +1,57 @@
+/* Ensure the background covers the full screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrollbars if content overflows */
+  }
+  
+  #root {
+    height: 100%; /* Ensure root div also takes full height */
+    width: 100%;
+    position: relative; /* To make sure elements can stack properly */
+  }
+  
+  /* Styling for the background scene */
+  div#space-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures it's behind other content */
+  }
+  
+  /* Example of form container, ensure it appears on top of the background */
+  form {
+    z-index: 1;
+  }
+  /* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333; /* Darker thumb for the scrollbar */
+  border-radius: 6px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Slightly lighter color on hover */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Grey track for the scrollbar */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Apply styles for the entire body to enable scrolling */
+body {
+  overflow-y: scroll;
+  background-color: #0f0f0f; /* Adjust your background color if needed */
+  color: #ffffff; /* Text color */
+  scrollbar-color: #333 #1a1a1a; /* Firefox scrollbar colors */
+  scrollbar-width: thin; /* Firefox scrollbar size */
+}
+
