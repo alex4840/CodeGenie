@@ -38,16 +38,21 @@ cd codegenie
 ```bash
 npm install
 ```
-create .env file in source folder with 
-### .env
-1.PORT=3000
-2.DEV_MODE=development
-3.MONGO_URI= your database url
-4.JWT_ACCESS_SECRET=
-5.JWT_ACCESS_EXPIREIN=
-6.JWT_REFRESH_TOKEN=
-7.JWT_REFRESH_EXPIREIN=
-8.GEMINI_API_KEY=
+
+### **Environment Variables**  
+To run this project, you need to create a `.env` file in the `src` directory and add the following environment variables:  
+
+1. `PORT=3000` – The port on which the backend server runs.  
+2. `DEV_MODE=development` – Specifies the development mode.  
+3. `MONGO_URI=your_database_url` – Your MongoDB connection string.  
+4. `JWT_ACCESS_SECRET=your_jwt_access_secret` – Secret key for signing access tokens.  
+5. `JWT_ACCESS_EXPIREIN=access_token_expiry_time` – Access token expiration time (e.g., `15m`).  
+6. `JWT_REFRESH_TOKEN=your_jwt_refresh_secret` – Secret key for signing refresh tokens.  
+7. `JWT_REFRESH_EXPIREIN=refresh_token_expiry_time` – Refresh token expiration time (e.g., `7d`).  
+8. `GEMINI_API_KEY=your_gemini_api_key` – API key for the Gemini API integration.  
+
+---
+
 
 ### **3. Start the Application**   
 ```bash
