@@ -39,15 +39,15 @@ cd codegenie
 npm install
 ```
 create .env file in source folder with 
-
-PORT=3000
-DEV_MODE=development
-MONGO_URI= your database url
-JWT_ACCESS_SECRET=
-JWT_ACCESS_EXPIREIN=
-JWT_REFRESH_TOKEN=
-JWT_REFRESH_EXPIREIN=
-GEMINI_API_KEY=
+### .env
+1.PORT=3000
+2.DEV_MODE=development
+3.MONGO_URI= your database url
+4.JWT_ACCESS_SECRET=
+5.JWT_ACCESS_EXPIREIN=
+6.JWT_REFRESH_TOKEN=
+7.JWT_REFRESH_EXPIREIN=
+8.GEMINI_API_KEY=
 
 ### **3. Start the Application**   
 ```bash
